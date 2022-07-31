@@ -2,8 +2,4 @@
 ok
 no
 ok
-oko
-ko
-ok
-ok
-okoka
+okoiasjfhsjka

@@ -1,9 +1,15 @@
-import time, sys
+import time
 
 def tprint(text):
     for char in text:
         print(char, end='', flush=True)
         time.sleep(0.05)
+
+def tinput(text):
+    for char in text:
+        print(char, end='', flush=True)
+        time.sleep(0.05)
+    return input()
 
 #ok
 print("ok")
@@ -12,17 +18,17 @@ y=1.13
 stringThing="wow, a string"
 print(x , "\t" , y , "\t" , stringThing)
 
-tprint("What is your name? "),
-name = input()
+name = tinput("What is your name? ")
 tprint("I don't care about your name " + name)
 
 time.sleep(2)
 print("\n")
 
-tprint("What is your favorite colour " + name + "? "),
-colour = input()
+colour = tinput("What is your favorite colour " + name + "? ")
 tprint("I like " + colour + " more than you")
 
 time.sleep(5)
 print("\n")
+
 tprint("f**k off " + name + "\n")
+

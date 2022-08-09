@@ -21,8 +21,14 @@ print("\n")
 colour = tinput("What is your favorite colour " + name + "? ")
 tprint("I like " + colour + " more than you")
 
+time.sleep(2)
+print("\n")
+
+food = tinput("What is your favorite food " + name + "? ")
+tprint("I also like " + food + " more than you")
+
 time.sleep(5)
 print("\n")
 
-tprint("f**k off " + name + "\n")
+tprint("Thank you for this information, your data will be sent straight to /dev/null \n")
 

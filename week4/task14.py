@@ -5,4 +5,4 @@
 import math
 balance = float(6600) # cents
 people = float(12)
-print("${}".format((balance//12)/100))
+print("${}".format((balance//people)/100))

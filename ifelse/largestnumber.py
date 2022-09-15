@@ -10,13 +10,13 @@ def get_ordinal(i):
         return SUFFIXES.get(i % 10, 'th')
 
 # Add as many numbers as you wish
-numbers = [12, 25, 52]
+numbers = [12, 25, 52, 100, 69, 420, 8, 1, 2]
 ranking = [0, 0]
 n = 1
 for i in numbers:
-    print("{}{} Number = {}".format(n,get_ordinal(n),i))
+    print("{}{} Number = {}".format(n, get_ordinal(n), i))
     if n==1 or ranking[1] < i:
         ranking[0] = n
         ranking[1] = i
     n += 1
-print("The {}{} Number is the greatest among the three".format(ranking[0],get_ordinal(ranking[0])))
+print("The {}{} Number is the greatest among the {} numbers".format(ranking[0], get_ordinal(ranking[0]), len(numbers)))

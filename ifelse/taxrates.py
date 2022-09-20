@@ -9,11 +9,9 @@ PASSWORD = "password"
 while True:
     i = "null"
     while i != "":
-        try:
-            i = getpass.getpass("Press enter to continue or admin password to quit: ")
-            if i == PASSWORD:
-                exit()
-        except:
+        i = getpass.getpass("Press enter to continue or admin password (password) to quit: ")
+        if i == PASSWORD:
+            exit()
 
     income = 0
     tax = 0

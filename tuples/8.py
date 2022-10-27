@@ -13,7 +13,6 @@ for i in range(len(tuple1)):
                 break
             if j == len(sort)-1:
                 sort.append(tuple1[i])
-                break
 
 tuple1 = tuple(sort)
 print(tuple1)

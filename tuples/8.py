@@ -11,7 +11,7 @@ for i in range(len(tuple1)):
             if sort[j][1] > tuple1[i][1]:
                 sort.insert(j, tuple1[i])
                 break
-            if j == len(sort)-1 and sort[j][1] < tuple1[i][1]:
+            if j == len(sort)-1:
                 sort.append(tuple1[i])
                 break
 
